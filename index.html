@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pac-Man Web</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="resources/font/ALGER.TTF" />
+</head>
+<body>
+    <main class="game-wrapper">
+        <canvas id="gameCanvas" width="606" height="606" tabindex="0" aria-label="Pac-Man game area"></canvas>
+        <div id="messageOverlay" class="overlay hidden" role="status" aria-live="polite">
+            <div class="overlay-content">
+                <p id="messageText"></p>
+                <p>Press ENTER to continue or play again.</p>
+                <p>Press ESC to quit.</p>
+            </div>
+        </div>
+        <div class="touch-controls" aria-label="Touch controls">
+            <button type="button" class="control-btn" data-direction="up" aria-label="Move up">▲</button>
+            <div class="control-row">
+                <button type="button" class="control-btn" data-direction="left" aria-label="Move left">◀</button>
+                <button type="button" class="control-btn" data-direction="down" aria-label="Move down">▼</button>
+                <button type="button" class="control-btn" data-direction="right" aria-label="Move right">▶</button>
+            </div>
+        </div>
+    </main>
+    <script src="game.js"></script>
+</body>
+</html>
